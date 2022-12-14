@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdio.h>
 #include "main.h"
-/**main - program's main function.
+/**
+ * main - program's main function.
  * Description: this is where program execution begins and ends.
  * @void: accepts no param.
  * Return: return value for main function
