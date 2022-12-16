@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - create an infinte loop
  * Return: return the value of infinte loop
  */
-
 int main(void)
 {
 	int i;
@@ -14,10 +12,10 @@ int main(void)
 	i = 0;
 
 	/* while (i < 10 );*/
-
 	{
 	putchar(i);
 	}
 	printf("infinite loop avoided! \\o/\n");
 	return (0);
 }
+
