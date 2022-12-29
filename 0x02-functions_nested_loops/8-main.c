@@ -9,7 +9,7 @@ int main(void)
 
 {
 
-    	jack_bouer();
+    	jack_bauer();
         return (0);
 
 }
