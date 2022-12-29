@@ -2,11 +2,12 @@
 
 /**
  * print_sign - Prints the sign of a number
- * @c: The number to be checked 
+ * @c:The number to be checked 
  * Return: 1 for positive num, -1 for negative nu or zero for anything else
  */
 
 int print_sign(int n)
+
 {
 	if (n > 0)
 	{
