@@ -1,4 +1,4 @@
-section .info
+section .data
 	global main
 	extern printf
 main:
@@ -6,5 +6,5 @@ main:
 	mov     eax, 0
 	call    printf
 
-	section .data
+	section .text
 mesg: db      "Hello, Holberton", 10
