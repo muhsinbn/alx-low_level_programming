@@ -9,10 +9,10 @@
  */
 void free_list(list_t *head)
 {
-	for (head)
+	while (head)
 	{
 		free_list(head->next);
-		for (head->str)
+		while (head->str)
 			free(head->str);
 		free(head);
 	}
