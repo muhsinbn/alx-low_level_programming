@@ -10,11 +10,11 @@
  */
 unsigned int _strlen(char *str)
 {
-	unsigned int b;
+	unsigned int i;
 
-	for (b = 0; str[b]; b++)
+	for (i = 0; str[i]; i++)
 		;
-	return (b);
+	return (i);
 }
 
 /**
@@ -46,9 +46,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 		return (new);
 	}
-	salt = *head;
-	while (salt->next)
-		salt = salt->next;
-	salt->next = new;
+	tmp = *head;
+	while (tmp->next)
+		tmp = tmp->next;
+	tmp->next = new;
 	return (new);
 }
