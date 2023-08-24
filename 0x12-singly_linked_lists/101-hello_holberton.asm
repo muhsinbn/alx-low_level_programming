@@ -1,10 +1,10 @@
-section .data
+section .text
 	global main
 	extern printf
 main:
-	mov     edi, mesg
+	mov     edi, mess
 	mov     eax, 0
 	call    printf
 
-	section .text
-mesg: db      "Hello, Holberton", 10
+	section .data
+mess: db      "Hello, Holberton", 0
