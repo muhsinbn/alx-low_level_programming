@@ -2,7 +2,7 @@ section .data
 	global main
 	extern printf
 main:
-	mov     edi, mess
+	mov     edi, mesg
 	mov     eax, 0
 	call    printf
 
