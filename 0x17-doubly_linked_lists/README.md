@@ -1,0 +1,1 @@
+A doubly linked list of singly linked lists is a data structure that consists of a set of singly linked lists (SLLs), each of which is doubly linked. It is used to store data in a way that allows for fast insertion and deletion of elements. Each SLL is made up of two parts: a head and a tail.
