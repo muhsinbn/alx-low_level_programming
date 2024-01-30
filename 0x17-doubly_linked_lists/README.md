@@ -1,0 +1,1 @@
+A Doubly linked list is a bidirectional linked list; i.e., you can traverse it from head to tail node or tail to head node. Unlike singly-linked lists, its node has an extra pointer that points at the last node.
