@@ -1,23 +1,26 @@
 #include "main.h"
 
 /**
- * _strncpy - copy two strings only taking n bytes from src
+ * _strncat - concatenates two strings only taking n bytes from src
  * @dest: first string to be added to
  * @src: second string to be added
  * @n: number of bites to use from src
  * Return: concatenated string
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *temp = dest;
 
-	for (; n != 0 && *src != '\0'; n--, src++)
+	for (; *temp != '\0'; temp++)
+		;
+	for (; *src != '\0'; src++)
 	{
+		if (n == 0)
+			break;
 		*temp = *src;
 		temp++;
+		n--;
 	}
-	for (; n != 0 && *temp != '\0'; n--, temp++)
-		*temp = '\0';
 	return (dest);
 }
