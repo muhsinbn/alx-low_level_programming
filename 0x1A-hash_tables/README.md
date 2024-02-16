@@ -1,4 +1,4 @@
-#Hash Tables
+Hash Tables
 A hash table is a data structure that allows for efficient insertion, deletion, and lookup operations. It is implemented as an array of key-value pairs, where the keys are hashed to determine their index in the array. The hash function takes a key as input and returns an index in the array where the key-value pair should be stored.
 
 What is a hash function
