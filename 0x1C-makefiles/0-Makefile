@@ -13,4 +13,4 @@ teacher.o: teacher.c
 all: school
 
 clean:
-	rm -f school main.o student.o teacher.o
+	rm -f school *.o
