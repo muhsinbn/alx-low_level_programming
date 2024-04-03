@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+    """Function that returns the perimeter of the island described in grid"""
 
-def island_perimeter(grid):
-    """
-    Calculates the perimeter of the island described in the grid.
-"""
+    def islandd_perimeter(grid):
+        """Return the perimeter of the island in grid"""
     perimeter = 0
+
     rows = len(grid)
     cols = len(grid[0])
 
