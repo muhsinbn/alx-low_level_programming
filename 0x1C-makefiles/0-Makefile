@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-school: main.c school.c
-	$(CC) $(CFLAGS) main.c school.c -c school
-
 all: school
+
+school: main.c school.c
+	$(CC) $(CFLAGS) main.c school.c -o school
 
 clean:
 	rm -f school
