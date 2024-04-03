@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -g
 
 school: main.o student.o teacher.o
 	$(CC) $(CFLAGS) -o school main.o student.o teacher.o
@@ -7,10 +7,9 @@ school: main.o student.o teacher.o
 main.o student.o teacher.o: %.o: %.c
 	$(CC) $(CFLAGS) -c $<
 
-.PHONY: all clean
 
 all: school
 
 clean:
-	rm -f school *.o
+	rm -f school
 
