@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-    """Function that returns the perimeter of the island described in grid"""
+"""Module that creates a function and returns perimeter in grid"""
 
-    def islandd_perimeter(grid):
-        """Return the perimeter of the island in grid"""
+
+def island_perimeter(grid):
+    """Returns the perimeter of the island in grid"""
     perimeter = 0
 
-    rows = len(grid)
-    cols = len(grid[0])
-
-    for i in range(rows):
-        for j in range(cols):
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
             if grid[i][j] == 1:
                 perimeter += 4
+
                 if i > 0 and grid[i - 1][j] == 1:
                     perimeter -= 2
                 if j > 0 and grid[i][j - 1] == 1:
