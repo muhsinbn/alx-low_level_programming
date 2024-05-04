@@ -1,8 +1,8 @@
 CC = gcc
-
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
+RM = rm -f
 
 all: $(NAME)
 
@@ -13,4 +13,11 @@ $(NAME): $(OBJ)
 	$(CC) -c -o $@ $<
 
 clean:
-	rm -f $(OBJ) $(NAME)
+	$(RM) *~ *# $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
